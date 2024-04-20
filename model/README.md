@@ -84,7 +84,7 @@ P(m, 2k) = sin( \frac{2m}{10000^{\frac{2k}{d*{emb}}}} )
 P(m, 2k+1) = cos( \frac{2m}{10000^{\frac{2k}{d*{emb}}}} )
 ```
 
-<p align="center"><img src="resources/cosine_positional_encoding.png?raw=true"/></p>
+<p align="center"><img src="../resources/cosine_positional_encoding.png?raw=true"/></p>
 
 Llama 2 instead use a recent mechanism to encode position directly into self-attention query and key projections, named [RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864). It is specifically designed to have special properties to encode positional information: let $`f( x_i, p)`$ be the function encoding position of token $`x`$ at position $`p`$, then the inner product of the positional encoding of two tokens at different positions $`p_x`$ and $`p_y`$ has the property:
 
@@ -102,7 +102,7 @@ For NLP, this mechanism allows to encode the importance of the other tokens with
 
 A clear advantage over previous approaches is that the whole context is accessible to a given token. The multi-head part is a way to learn different weights at the same time and thus provide different representations of the input sequence, allowing the model to be more expressive.
 
-<p align="center"><img src="resources/multi-head-attention-init.png?raw=true"/></p>
+<p align="center"><img src="../resources/multi-head-attention-init.png?raw=true"/></p>
 
 #### Feed-forward
 
@@ -188,7 +188,7 @@ f_{\theta} = \text{argmin} \ L(X, Y)
 \textbf{y}_i = [t_1, ..., t_{T + 1}]_{i}
 ```
 
-<p align="center"><img src="resources/decoder-only.png?raw=true"/></p>
+<p align="center"><img src="../resources/decoder-only.png?raw=true"/></p>
 
 ## References
 
