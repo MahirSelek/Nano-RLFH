@@ -171,7 +171,7 @@ f_{\theta} = \text{argmin} \ L(X, Y)
 
 RLHF or reinforcement learning from human feedback is a machine learning technique used to optimize the performance of an AI model through integration of human insight and reinforcement learning. RLHF is highly instrumental in training and fine-tuning GenAI models, including large language models (LLMs), to perform a host of tasks, such as realistic content generation, responding to questions, and code generation. LLMs trained through RLHF generate outputs that are informative and in alignment with human values
 
-<p align="center"><img src="resources/rlh.png?raw=true"/></p>
+<p align="center"><img src="resources/rlh.jpg?raw=true"/></p>
 
 1. Pre-training: This initial step involves training a model, such as Transformers or Mamba architecture, to predict the next token. While this model can complete sentences, it lacks knowledge of when to stop generating text. Mistral-7B-v0.1 exemplifies a pre-trained model, with over 90% of training dedicated to this step.
 
